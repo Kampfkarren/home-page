@@ -1,1 +1,0 @@
-Mail icon by [Yannick](https://www.flaticon.com/authors/yannick) from www.flaticon.com
