@@ -23,17 +23,17 @@ export default class extends Component<{}, { date: Date }> {
 		  () => this.tick(),
 		  1000
 		);
-	  }
+	}
 
-	  componentWillUnmount() {
+	componentWillUnmount() {
 		clearInterval(this.timerId);
-	  }
+	}
 
-	  tick() {
+	tick() {
 		this.setState({
-		  date: new Date()
+			date: new Date()
 		});
-	  }
+	}
 
 	render() {
 		return (
