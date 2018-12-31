@@ -1,0 +1,63 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Links */
+.links td:not(:last-child) {
+  padding-right: 0.75vw;
+}
+
+.Link {
+  position: relative;
+}
+
+.Link img {
+  height: 10vh;
+}
+
+.Link .notification {
+  color: #fff;
+  left: -10%;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+}
+
+/* Clock */
+.App .Clock {
+  text-align: center;
+}
+
+.App .Clock .date, .App .Clock .weekday {
+  font-size: 4vh;
+}
+
+.App .Clock .time {
+  font-size: 10vh;
+}
+
+/* Notifications */
+.Notifications {
+  list-style-type: none;
+  max-height: 15%;
+  overflow-x: hidden;
+  width: 30%;
+}
+
+.Notifications a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Notifications img {
+  display: inline-block;
+  height: 2vh;
+  padding-right: 1%;
+}
+
+.Notifications li * {
+  vertical-align: middle;
+}
