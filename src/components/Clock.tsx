@@ -29,6 +29,10 @@ export default class extends Component<{}, { date: Date }> {
 		clearInterval(this.timerId);
 	}
 
+	getDateString(): string {
+		return `${this.state.date.getFullYear()}-${this.state.date.getMonth()}-${this.state.date.getDate()}`;
+	}
+
 	tick() {
 		this.setState({
 			date: new Date()
@@ -40,7 +44,7 @@ export default class extends Component<{}, { date: Date }> {
 			<div className="Clock">
 				<div className="weekday">{ WEEKDAYS[this.state.date.getDay()] }</div>
 				<div className="time">{ this.state.date.toLocaleTimeString("en-GB") }</div>
-				<div className="date">{ this.state.date.toISOString().substring(0, 10) }</div>
+				<div className="date">{ this.getDateString() }</div>
 			</div>
 		);
 	}
